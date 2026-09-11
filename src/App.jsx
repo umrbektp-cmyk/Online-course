@@ -58,7 +58,7 @@ export default function App() {
     const r = data[0];
     if (r.result === "pending") return flash("Hisob hali tasdiqlanmagan.");
     if (r.result === "wrong_device") return flash("Bu hisob boshqa qurilmaga bog'langan. Adminga murojaat qiling.");
-    if (r.result === "ok") { setUser({ name: r.name, phone: r.phone }); setScreen("student"); }
+    if (r.result === "ok") { setUser({ name: r.s_name, phone: r.s_phone }); setScreen("student"); }
   };
 
   return (
