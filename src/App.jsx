@@ -90,12 +90,11 @@ function Landing({ onStart, onLogin }) {
   return (
     <div style={S.wrap}>
       <section style={S.hero}>
-        <p style={S.kicker}>Noldan boshlaymiz</p>
-        <h1 style={S.h1}>Ingliz tilini<br />boshidan o'rganing</h1>
+        <h1 style={S.bigTitle}>Level<br />Up<span style={{ color: "#e24b4a" }}>.</span></h1>
         <p style={S.lead}>Hech qanday bilim talab qilinmaydi. Alifbodan kundalik suhbatgacha — bosqichma-bosqich darslar.</p>
         <div style={S.ctaRow}>
           <button className="primary" onClick={onStart}>Ro'yxatdan o'tish</button>
-          <button className="ghost" onClick={onLogin}>Hisobim bor</button>
+          <button className="ghost" onClick={onLogin}>Kirish</button>
         </div>
         <p style={S.microcopy}>Har bir o'quvchi admin tomonidan tasdiqlanadi. Bir hisob — bir qurilma.</p>
       </section>
@@ -264,7 +263,8 @@ const S = {
   footer: { borderTop: `1px solid ${LINE}`, padding: "14px 28px", fontSize: 12, color: MUT, textAlign: "center" },
   toast: { position: "fixed", top: 16, left: "50%", transform: "translateX(-50%)", background: INK, color: "#fff", padding: "12px 20px", borderRadius: 10, fontSize: 14, zIndex: 50, maxWidth: "90%" },
   wrap: { display: "flex", flexDirection: "column", gap: 40 },
-  hero: { textAlign: "center", padding: "20px 0 10px" },
+  hero: { textAlign: "center", padding: "60px 0 40px" },
+  bigTitle: { fontSize: 92, lineHeight: .88, margin: "0 0 28px", letterSpacing: "-4px", fontWeight: 800, color: "#111" },
   kicker: { color: MUT, fontSize: 14, margin: 0, fontWeight: 500 },
   h1: { fontSize: 46, lineHeight: 1.05, margin: "10px 0 16px", letterSpacing: "-.03em", fontWeight: 800 },
   lead: { color: MUT, fontSize: 18, maxWidth: 540, margin: "0 auto 26px", lineHeight: 1.6 },
