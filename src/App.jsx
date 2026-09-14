@@ -66,7 +66,7 @@ export default function App() {
       <style>{CSS}</style>
       {notice && <div style={S.toast}>{notice}</div>}
       <header style={S.header}>
-        <div style={S.logo} onClick={() => setScreen("landing")}>Ingliz Tili Kursi</div>
+        <div style={S.logo} onClick={() => setScreen("landing")}>Level Up</div>
         <nav style={S.nav}>
           {screen !== "admin" && <button className="ghost" onClick={() => setScreen("admin")}>Admin panel</button>}
           {user
